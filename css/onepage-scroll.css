@@ -1,0 +1,105 @@
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+}
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-pagination {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.onepage-pagination li {
+  padding: 0;
+  text-align: center;
+}
+.onepage-pagination li a{
+  padding: 20px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  
+}
+.onepage-pagination li a:before{
+  content: attr(data-index);
+  position: absolute;
+  color: #8f8f8f;
+  width: 20px;
+  height: 20px;
+  background: rgba(200, 85, 0, 0.85);
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  transition: all 0.3s cubic-bezier(0.31, 0.28, 0.13, 1.54);
+  left: -5px;
+  margin-top: -16px;
+}
+
+.onepage-pagination li a.active:before{
+  width: 40px;
+  height: 40px;
+  background: rgba(200, 85, 0, 0.85);
+  border: 3px solid #3c8eff;
+  margin-top: -16px;
+  margin-bottom: 16px;
+  left: -15px;
+  transition: all 0.3s cubic-bezier(0.31, 0.28, 0.13, 1.54);
+  content: attr(data-index);
+  color: #19b2ff
+}
+.onepage-pagination li a.active{
+    margin-bottom: 16px;
+}
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto;
+}
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+}
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%;
+}
+
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none;
+}
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit;
+}
