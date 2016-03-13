@@ -1,17 +1,15 @@
 *{
     font-family: Roboto, sans-serif;
 }
-
-body{
-    overflow: hidden;
+#section1 h1{
+    font-size: 127.5pt;
+    color:#ffffff;
+    text-shadow: 0px 4px 6px rgba(0,0,0,0.35);
 }
 
 #h1-1{
     font-family: Roboto, sans-serif;
     font-weight: 100;
-    font-size: 127.5pt;
-    color:#ffffff;
-    text-shadow: 0px 4px 6px rgba(0,0,0,0.35);
 }
 
 #section1 p {
@@ -145,10 +143,4 @@ a:hover{
 #s3-d1 {
     margin-top: 15%;
 
-}
-
-@media screen and (max-width: 620px){
-    #h1-1 {
-        font-size:100pt;
-    }
 }
