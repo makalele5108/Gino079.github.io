@@ -25,6 +25,21 @@ body{
     line-height: 35px;
     }
 
+#p-1-date{
+    color: #ffffff;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.35);
+    font-size: 32pt;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    margin-top: 10%;
+    line-height: 42pt;
+}
+
+#date-placeholder{
+    height: 100%;
+    width: 100%;
+}
+
 
 #welkom {
     margin-top: 5%;
@@ -294,4 +309,21 @@ a:hover{
     font-family: Roboto, sans-serif;
     font-weight: 100;
     font-size: 22pt;
+}
+.alertWrapper{
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mdl-checkbox__box-outline{
+    top: 11px;
+    left: 10px;
+}
+.mdl-checkbox__ripple-container{
+    top: 0px;
+    left: 0px;
 }
