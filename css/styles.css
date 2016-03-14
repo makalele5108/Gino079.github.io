@@ -327,3 +327,7 @@ a:hover{
     top: 0px;
     left: 0px;
 }
+
+#check-label{
+    font-size: 18pt;
+}
