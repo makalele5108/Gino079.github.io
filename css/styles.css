@@ -17,23 +17,11 @@ body{
 #p-1 {
     color: #ffffff;
     text-shadow: 0px 2px 4px rgba(0,0,0,0.35);
-    margin-top: -4%;
-    margin-bottom: 6%;
     font-size: 28pt;
     font-family: Roboto, sans-serif;
     font-weight: 100;
-    line-height: 35px;
+    line-height: 32pt;
     }
-
-#p-1-date{
-    color: #ffffff;
-    text-shadow: 0px 2px 4px rgba(0,0,0,0.35);
-    font-size: 32pt;
-    font-family: Roboto, sans-serif;
-    font-weight: 100;
-    margin-top: 10%;
-    line-height: 42pt;
-}
 
 #date-placeholder{
     height: 100%;
@@ -43,44 +31,43 @@ body{
 
 #welkom {
     margin-top: 5%;
+    width: 100%;
+    min-height: 35%;
+    max-height: 45%;
+    background-color: darkred;
 }
 #website {
    margin-top: 1.5%;
 }
 
+#logo{
+    bottom: 0;
+    position: absolute;
+}
 
-#button-1 {
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 100;
-    border: rgba(255,255,255,0.3) 1px solid;
-    padding-top: 0.50%;
-    padding-bottom: 0.50%;
-    padding-left: 3%;
-    padding-right: 3%;
-    background-color: rgba(6, 171, 252,1);
-    color: rgba(255,255,255,1);
-    font-size: 28px;
-    font-family: Roboto, sans-serif;
+#logoimg{
+    width: 45%;
+    bottom: 0;
+
 }
 
 a:hover{
     text-decoration: none;
 }
 .page1{
-    background:url(../images/1st%20page%20img.jpg);
+    background-color: white;
     background-size: cover;
 }
 .page7{
     color: #ffffff;
 }
 .page2 {
-    background-color: #2f6090;
+    background-color: darkred;
 }
 
 #info {
     color: white;
-    font-size: 180px;
+    font-size: 220px;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
     margin-bottom: -3%;
 }
@@ -109,7 +96,7 @@ a:hover{
     padding: 4px 4% 4px 4%;
 }
 .page3 {
-    background-image: url(../images/3rd%20page.jpg);
+    background-color: #000000;
     background-size: cover;
 }
 #p-3 {
@@ -122,7 +109,7 @@ a:hover{
 }
 #hart {
     color: #ffffff;
-    font-size: 180px;
+    font-size: 220px;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
 }
 #s3-d1 {
@@ -131,7 +118,8 @@ a:hover{
 }
 
 .page4 {
-    background-color: #538c01;
+    background-image: url("../images/k.jpg");
+    background-size: cover;
 }
 #s4-d1 {
     margin-top: 15%;
@@ -141,7 +129,7 @@ a:hover{
 }
 #s4-p1 {
     color: white;
-    font-size: 36pt;
+    font-size: 52pt;
     margin-top: 1.5%;
     line-height: 55px;
     font-family: Roboto, sans-serif;
@@ -181,24 +169,19 @@ a:hover{
     margin-top: -18px;
 }
 .page6 {
-    background-color: #1e88e5;
+    background-color: #ffffff;
 }
 #s6-d1 {
-    margin-top: 5%;
+    min-height: 15%;
+    max-height: 55%;
+    background-color: darkred;
 }
-#tandwiel {
-    font-size: 180px;
-    color: #ffffff;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.35);
-}
-#s6-d2 {
-    margin-top: 1.5%;
-}
+
 #s6-p1 {
     color: white;
-    font-size: 36pt;
-    margin-top: 1.5%;
-    line-height: 55px;
+    font-size: 52pt;
+    line-height: 52pt   ;
+    margin-top: 15px;
     font-family: Roboto, sans-serif;
     font-weight: 100;
 }
@@ -208,6 +191,9 @@ a:hover{
     #h1-1 {
         font-size:100pt;
         }
+    #logoimg{
+
+    }
 }
 
 @media screen and (max-width: 480px){
